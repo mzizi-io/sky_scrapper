@@ -5,3 +5,5 @@ logs/*
 backend/app/logs/*
 backend/scripts/logs/*
 **/__pycache__
+__pycache__/
+.idea
