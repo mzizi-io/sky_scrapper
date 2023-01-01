@@ -1,0 +1,1 @@
+"c:/Users/lenovo x1/Desktop/web_scrapping/.venv/Scripts/python.exe" "c:/Users/lenovo x1/Desktop/web_scrapping/app/cookie_manager/cookie_extractor.py"

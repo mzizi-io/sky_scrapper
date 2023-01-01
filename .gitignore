@@ -1,0 +1,7 @@
+node_modules/
+.venv/
+.env
+logs/*
+backend/app/logs/*
+backend/scripts/logs/*
+**/__pycache__
