@@ -4,6 +4,7 @@ node_modules/
 logs/*
 backend/app/logs/*
 backend/scripts/logs/*
+backend/.pdm.toml
 **/__pycache__
 __pycache__/
 .idea

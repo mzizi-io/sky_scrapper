@@ -1,0 +1,25 @@
+[tool.pdm]
+
+[project]
+name = ""
+version = ""
+description = ""
+authors = [
+    {name = "", email = ""},
+]
+dependencies = [
+    "scrapy>=2.7.1",
+    "selenium>=4.7.2",
+    "dotenv>=0.0.5",
+    "python-dotenv>=0.21.0",
+    "browsercookie>=0.7.7",
+    "lz4>=4.0.2",
+    "pycryptodome>=3.16.0",
+    "pyvirtualdisplay>=3.0",
+    "selenium-stealth>=1.0.6",
+    "fastapi>=0.88.0",
+    "uvicorn>=0.20.0",
+    "pandas>=1.5.2",
+]
+requires-python = ">=3.8"
+license = {text = "MIT"}
