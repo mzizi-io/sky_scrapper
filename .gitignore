@@ -7,4 +7,5 @@ backend/scripts/logs/*
 backend/.pdm.toml
 **/__pycache__
 __pycache__/
+__pypackages__/
 .idea
