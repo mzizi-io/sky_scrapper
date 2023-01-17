@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components"
+import { MdLuggage } from "react-icons/md";
+import { BsPersonCheckFill} from "react-icons/bs";
 
 import DropdownButton from "./DropDown";
 import CountrySelect from "./CountrySelect";
@@ -9,7 +11,9 @@ import JumboVideoWebm from "../assets/video/video.webm"
 import JumboVideoMP4 from "../assets/video/video.mp4"
 import JumboVideoOGV from "../assets/video/video.ogv"
 import Styles from "../assets/css/main.css"
-
+import MangoButton from "./Button";
+import DropDownDiv from "./DropDownDiv";
+import ChildrenAndBaggageDiv from "./ChildrenAndBaggage";
 
 function Jumbotron(){
     return (
@@ -17,6 +21,10 @@ function Jumbotron(){
             <SelectionModal>
                 <SelectionHeaderParameters>
                     <DropdownButton title='Return' options="Return One-Way Nomad" ></DropdownButton>
+                    <DropdownButton title='Economy' options="Economy Business First" ></DropdownButton>
+                    <DropDownDiv height="5" width="7" dropDownContent = { <ChildrenAndBaggageDiv/> } >
+                        <pre><BsPersonCheckFill size={30}/> &emsp; <MdLuggage size={30}/></pre>
+                    </DropDownDiv>
                 </SelectionHeaderParameters>
 
                 <SelectionContainer>
@@ -24,6 +32,7 @@ function Jumbotron(){
                     <CountrySelect label="Arrival"/>
                     <BaseDatePicker label="From"/>
                     <BaseDatePicker label="To"/>
+                    <MangoButton variant="contained"> Find flights</MangoButton>
                 </SelectionContainer>
             </SelectionModal>
 
@@ -48,7 +57,7 @@ const JumbotronContainer = styled.div`
 `
 
 const SelectionModal = styled.div`
-    height: 15vh;
+    height: 20vh;
     width: 70vw;
     border-radius: 15px;
     position: absolute;

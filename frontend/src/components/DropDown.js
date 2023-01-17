@@ -5,7 +5,7 @@ import DropdownItem from 'react-bootstrap/esm/DropdownItem';
 import DropdownMenu from 'react-bootstrap/esm/DropdownMenu';
 
 function DropDown(props) {
-  {/* Handling state */}
+  /* Handling state */
   const [title, setTitle] = useState(props.title)
 
   const changeHeader = function(e){
