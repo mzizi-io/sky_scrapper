@@ -17,17 +17,26 @@ export default function DropDownDiv(props){
     useEffect(() => {
         document.addEventListener("mousedown", (e) =>{
             /* Check if the dropdown div contains the element */
-            const dropdownItems = document.getElementsByClassName("dropdown")
-            console.log(dropdownItems)
-            dropdownItems.map((item) => { return e.target === item})
-            console.log(e.target)
-            console.log(dropdownItems)
+            var dropdownItems = document.getElementsByClassName("dropdown")
+            var dropdownArray = Object.values(dropdownItems)
+
+            /* Get the div clicked*/
+            var val = dropdownArray.filter((item)=>{return item.id === props.id})[0]
+
+            /*Check if target in div*/
+            if (val != undefined){
+                /*Toggle div visibility*/
+                if (!val.contains(e.target)){
+                    handleClick()
+                }
+            }
+            
         })
     })
 
     return(
-        <div>
-            <DropDown className="dropdown" height= {props.height} width={props.width} onClick = {handleClick} >{props.children}</DropDown>
+        <div className="dropdown" id = {props.id}>
+            <DropDown height= {props.height} width={props.width} onClick = {handleClick} >{props.children}</DropDown>
             <DropdownContent visibility = { visibility }>{props.dropDownContent}</DropdownContent>
         </div>
     )

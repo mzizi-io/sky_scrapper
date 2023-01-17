@@ -22,7 +22,7 @@ function Jumbotron(){
                 <SelectionHeaderParameters>
                     <DropdownButton title='Return' options="Return One-Way Nomad" ></DropdownButton>
                     <DropdownButton title='Economy' options="Economy Business First" ></DropdownButton>
-                    <DropDownDiv height="5" width="7" dropDownContent = { <ChildrenAndBaggageDiv/> } >
+                    <DropDownDiv id="baggage-passengers" height="5" width="7" dropDownContent = { <ChildrenAndBaggageDiv/> } >
                         <pre><BsPersonCheckFill size={30}/> &emsp; <MdLuggage size={30}/></pre>
                     </DropDownDiv>
                 </SelectionHeaderParameters>
@@ -65,7 +65,7 @@ const SelectionModal = styled.div`
     background-color: white;
     box-shadow: rgba(37, 42, 49, 0.4) 0px 4px 12px 0px;
     border: 1px solid #cccccc;
-    padding: 5px;
+    padding: 10px;
     z-index: 0;
 `
 
@@ -82,8 +82,9 @@ const SelectionContainer = styled.div`
     height: 60%;
     display: flex;
     align-items: center;
-    gap: 1vw;
+    gap: 0.5vw;
     padding-left: 2vw;
+    padding: 0 3vh 0vh 3vh;
 `
 
 export default Jumbotron;

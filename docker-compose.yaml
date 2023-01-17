@@ -15,4 +15,8 @@ services:
     build: ./frontend
     ports: 
       - 3000:3000
-
+    healthcheck:
+      interval: 30s
+      retries: 5
+      test: curl --write-out 'HTTP %{http_code}' --fail --silent --output /dev/null http://localhost:3000/
+    

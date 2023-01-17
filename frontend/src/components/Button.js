@@ -1,12 +1,17 @@
 import React from "react";
-import { Button } from "@mui/material";
+import styled from "styled-components";
 
 export default function MangoButton(props){
     return (
-        <Button     
-            style={{
-                    backgroundColor: "#FFC107",
-                    color: "black"
-                }}>{props.children}</Button>
+        <Button>{props.children}</Button>       
     )
 }
+
+const Button = styled.button`
+    background-color: #FFC107;
+    color: black;
+    border: 0px;
+    border-radius: 5px;
+    width: 8vw;
+    height: 2vw;
+` 

@@ -9,7 +9,6 @@ function Home(){
             <Jumbotron className="jumbotron"></Jumbotron>
         </div>
     )
-
 }
 
 
